@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8"/>
+		<title>Joshua Fingert</title>
+
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+
+		<link href="style.css" rel="stylesheet">
+
+	
+	</head>
+
+	<body>
+		<div class="name">
+			<h1>Joshua Fingert</h1>
+		</div>
+
+		<div class="header">
+			<h2>These are some projects that I have worked on</h2>
+		</div>
+
+		<div class="links">
+			<a href="http://curriedav.github.io/pdxTechFinder/index.html">PDX TechMunk</a>
+			<p>Backbone.JS, Bootstrap, Meetup.com APIs, Google Maps API</p> <br>
+
+	    <a href="http://jfingert.github.io/weatherApp/">Weather App</a>
+	    <p>Backbone.JS, Bootstrap, Forecast.io API</p> <br>
+
+	    <a href="https://github.com/JFingert/various_exercises/blob/master/romnum.js">Convert Your Roman Numerals</a>
+			<p>Javascript</p>
+
+	  </div>
+
+	  <div class="summary">
+	  	<h2 class="summaryHeading">My Background</h2>
+	  	
+	  	<h3>I have been attending Portland Code School, studying JavaScript and front end development.</h3>
+	  	<h3>During this time, I have been manipulating data and styling web content, using a variety of frameworks and libraries.</h3>
+	  	<h3>Check out the links to view projects and my qualifications.</h3>
+	  	<h3>Feel free to contact me with any questions.</h3>
+    </div>
+
+
+	  
+			
+
+	    
+
+	
+
+
+		<!-- PARALAX BOX -->
+    <div id="box">
+      <h2><span class="contact">Contact</span> | <a href="mailto:joshuafingert@gmail.com">email</a> | <a href="http://www.linkedin.com/in/joshuafingert/">LinkedIn</a> | <a href="https://github.com/JFingert">Github</a></h2>
+    </div>
+
+   
+
+
+	
+		<img src="http://consumer-perspective.com/wp-content/uploads/2013/07/White-LARGE-background.jpg">
+		<!-- <img src="http://consumer-perspective.com/wp-content/uploads/2013/07/White-LARGE-background.jpg"> -->
+
+		<script type="text/javascript">
+        function slideBox () {
+            var box = document.getElementById('box');
+            
+            box.style.top = (290 + window.pageYOffset) + 'px';
+
+        console.log("Y Offset: " + window.pageYOffset);
+    }
+        window.addEventListener("scroll", slideBox, false);    
+    </script>
+	</body>
+</html>
