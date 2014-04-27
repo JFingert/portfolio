@@ -57,6 +57,10 @@ a:hover{
 		display: block;
 	}
 
+	#nav {
+		background-color: white;
+	}
+
 	.name, .navText {
 		font-size: 12px;
 	}
