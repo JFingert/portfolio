@@ -51,7 +51,7 @@ a:hover{
 }
 
 #picture {
-	background: url('images/tile.jpg');
+	background: url('images/tileW.png');
   background-attachment: fixed;
   background-size: cover;
   height: 200px;
