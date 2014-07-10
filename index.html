@@ -6,7 +6,7 @@
 	<title>Joshua Fingert</title>
 
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 
@@ -33,7 +33,7 @@
 
 	<div id="nav" class="navbar navbar-default navbar-fixed-top" role="navigation">
 		<div class="container">
-			<h2 class="navText"><a data-scroll href="#top">Portfolio</a> &nbsp <a data-scroll href="#summary">Summary</a> &nbsp <a data-scroll href="#contact">Contact</a><span class="name">Joshua Fingert</span></h2>
+			<h2 class="navText"><a data-scroll href="#top">Portfolio</a> &nbsp <a data-scroll href="#summary">About</a> &nbsp <a data-scroll href="#contact">Contact</a><span class="name">Joshua Fingert</span></h2>
 		</div>
 	</div>
 
@@ -65,7 +65,7 @@
 				<a href="https://github.com/curriedav/pdxTechFinder">The Code</a>
 			</div>
 			<div class="col-md-6" class="right">
-				Plugging data from The Meetup API into Google Maps was a highlight of this project, and figuring-out how to create multiple location markers with a function closure. Made with Backbone, Meetup's API, and Google Maps.
+				Plugging data from The Meetup API into Google Maps was a highlight of this project, and figuring-out how to create multiple location markers with a function closure. Made with Backbone.
 			</div>
 		</div>
 		<br>
@@ -77,7 +77,7 @@
 				<a href="https://github.com/JFingert/weatherApp">The Code</a>
 			</div>
 			<div class="col-md-6" class="right">
-				Made with Backbone, Handlebars, and Forecast.io. Data formatting with JavaScript.
+				Made with Backbone and Handlebars, formatting data from Forecast.io.
 			</div>
 		</div>
 		<br>
@@ -95,20 +95,33 @@
 		</div>
 		<br>
 
-		<div id="picture"></div>
+		<div class="row" id="picture">
+
+			<div class="col-xs-3 col-xs-offset-9">
+				<img class="img-circle" src="images/me.jpg">
+			</div>
+
+			<!-- <div class="col-xs-3 ">
+				<img class="img-circle" src="images/HorsethiefButte.jpg">
+			</div> -->
+
+		</div>
 
 
 
 		<div id="summary" class="row">
 			<div class="col-sm-12 col-sm-offset-5 summaryHeading">
-					<h2>Summary</h2>
+				<h2>About</h2>
 			</div>
 			<div class="col-md-7 col-md-offset-2">
 
-				Currently, I am at Smart Mocha and freelancing as a web developer.<br>
-				I've been creating test suites for a large Angular application, working closely with senior developers, and collaborating with clients on websites.<br>
+				I am a Javascript / front end developer currently at Smart Mocha and freelancing as a web developer.<br>
+				Originally from California, I went up to Olympia for an audio engineering degree from Evergreen. Interests include technology, music, food, outdoor experiences, and self-powered wheeled sports. If not in Portland, my family and I are probably at Horsethief Butte, drying out from the soggy grind of the city.<br><br>
+
+				
+				Working closely with senior developers, I've been creating test suites for a large Angular application, and collaborating with clients on websites.<br>
 				Check out the links to view projects and my profile.<br>
-				Feel free to contact me for further work and examples of the tests I've been working on.<br>
+				Feel free to contact me for further work and examples of the tests that I've been working on.<br>
 			</div>
 			<!-- <div class="col-md-6" -->
 		</div>
@@ -119,12 +132,19 @@
 	</div>
 
 	<script>
-		smoothScroll.init();
+	smoothScroll.init({
+		speed: 500, 
+		easing: 'easeInOutQuad', 
+		updateURL: false, 
+		offset: 50, 
+		callbackBefore: function ( toggle, anchor ) {}, 
+		callbackAfter: function ( toggle, anchor ) {} 
+	});
 
-		$('#myScrollspy').on('activate.bs.scrollspy', function () {
-  		$('this').addClass('active');
-		})
-		
+	$('#myScrollspy').on('activate.bs.scrollspy', function () {
+		$('this').addClass('active');
+	})
+
 	</script>
 </body>
 </html>

@@ -83,6 +83,11 @@ a:hover{
 	margin-top: 100px;
 }
 
+.img-circle {
+	width: 200px;
+	height: 200px;
+}
+
 @media (max-width: 675px) {
 	.navText, #footer h2 {
 		font-size: 14px;
