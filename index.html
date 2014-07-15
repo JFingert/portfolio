@@ -1,70 +1,160 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<meta charset="utf-8"/>
-		<title>Joshua Fingert</title>
+<head>
+	<meta charset="utf-8"/>
+	<title>Joshua Fingert</title>
 
-		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
-		<link href="style.css" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+	<link href="style.css" rel="stylesheet">
+
+	<script src="smooth-scroll.js"></script>
 
 	
-	</head>
+</head>
 
-	<body>
+<body class="container" data-spy="scroll" data-target=".navbar-example">
 
-		<div id="nav">
-      <h2 class="navText"><span class="contact">Contact</span> | <a href="mailto:joshuafingert@gmail.com">email</a> | <a href="http://www.linkedin.com/in/joshuafingert/">LinkedIn</a> | <a href="https://github.com/JFingert">Github</a></h2>
-    </div>
 
-		<div>
-			<h2 class="name">Joshua Fingert</h2>
+	<div id="nav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<h2 class="navText"><a data-scroll href="#top">Portfolio</a> &nbsp <a data-scroll href="#summary">About</a> &nbsp <a data-scroll href="#contact">Contact</a><span class="name">Joshua Fingert</span></h2>
+		</div>
+	</div>
+
+	<div id="top"></div>
+
+
+	<div class="row header">
+		<div class="col-sm-12 col-sm-offset-5">
+			<h2>Portfolio</h2>
+		</div>
+	</div>
+
+	<div id="links">
+
+		<div class="row">
+			<div class="col-md-3 col-md-offset-3 left">
+				<a href="http://www.fsconsults.com">Future State</a>
+			</div>
+			<div class="col-md-6" class="right">
+				It was a lot of fun collaborating on the design and functionalities of this responsive single page app. A new tech recruiting company in Portland, they needed a succinct and mobile-friendly site. 
+			</div>
+		</div>
+		<br>
+
+		<div class="row">
+			<div class="col-md-3 col-md-offset-3 left">
+				<a href="https://github.com/JFingert/tests/blob/master/tests.js">Tests/Mocha</a>
+			</div>
+			<div class="col-md-6" class="right">
+				An example of the tests I've been writing for an Angular application. Data from dozens of devices are fetched from the API and tested for content, format, and relationships. Written with Mocha, run with Karma and Grunt.
+			</div>
+		</div>
+		<br>
+
+
+		<div class="row">
+			<div class="col-md-3 col-md-offset-3 left">
+				<a href="http://curriedav.github.io/pdxTechFinder/index.html">PDX TechMunk</a> <br>
+				<a href="https://github.com/curriedav/pdxTechFinder">The Code</a>
+			</div>
+			<div class="col-md-6" class="right">
+				Plugging data from The Meetup API into Google Maps was a highlight of this project, and figuring-out how to create multiple location markers with a function closure. Made with Backbone.
+			</div>
+		</div>
+		<br>
+
+
+		<div class="row">
+			<div class="col-md-3 col-md-offset-3 left">
+				<a href="http://jfingert.github.io/weatherApp/">Weather App</a> <br>
+				<a href="https://github.com/JFingert/weatherApp">The Code</a>
+			</div>
+			<div class="col-md-6" class="right">
+				Made with Backbone and Handlebars, formatting data from Forecast.io.
+			</div>
+		</div>
+		<br>
+
+
+
+
+		<div class="row">
+			<div class="col-md-3 col-md-offset-3 left">
+				<a href="https://github.com/JFingert/various_exercises/blob/master/romnum.js">Convert Your Roman Numerals</a> <br>
+			</div>
+			<div class="col-md-6" class="right">
+				Problem solving with Javascript!
+			</div>
+		</div>
+		<br>
+
+		<div class="row" id="picture">
+
+			<div class="col-xs-3 col-xs-offset-9">
+				<img class="img-circle" src="images/me.jpg">
+			</div>
+
+			<!-- <div class="col-xs-3 ">
+				<img class="img-circle" src="images/HorsethiefButte.jpg">
+			</div> -->
+
 		</div>
 
-		<div class="header">
-			<h2>These are some projects that I have worked on</h2>
+
+
+		<div id="summary" class="row">
+			<div class="col-sm-12 col-sm-offset-5 summaryHeading">
+				<h2>About</h2>
+			</div>
+			<div class="col-md-7 col-md-offset-2">
+
+				I am a Javascript developer currently working with Angular to transform data, and get it into a clean user interface. I've also been creating a set of API test for this application. In addition, I have been freelancing, collaborating with clients on websites.<br><br>
+
+				Originally from California, I came to Portland in 2006 via Evergreen for an audio engineering degree. Interests include technology, music, food, outdoor experiences, and self-powered wheeled sports.<br><br>
+
+				
+				Check out the links to view projects and my profile.<br>
+				Feel free to contact me for further work.<br>
+			</div>
+			<!-- <div class="col-md-6" -->
 		</div>
+	</div>
 
-		<div class="links">
+	<div id="footer">
+		<h2><span id="contact">Contact</span> &nbsp <a href="mailto:joshuafingert@gmail.com">email</a> &nbsp <a href="http://www.linkedin.com/in/joshuafingert/">LinkedIn</a> &nbsp <a href="https://github.com/JFingert">Github</a></h2>
+	</div>
 
-			<a href="http://jfingert.github.io/fs/">Single Page Scroller</a>
-			<p>HTML, CSS, Bootstrap</p> <br>
+	<script>
+	smoothScroll.init({
+		speed: 500, 
+		easing: 'easeInOutQuad', 
+		updateURL: false, 
+		offset: 50, 
+		callbackBefore: function ( toggle, anchor ) {}, 
+		callbackAfter: function ( toggle, anchor ) {} 
+	});
 
+	$('#myScrollspy').on('activate.bs.scrollspy', function () {
+		$('this').addClass('active');
+	})
 
-			<a href="http://curriedav.github.io/pdxTechFinder/index.html">PDX TechMunk</a>
-			<p>Backbone.JS, Meetup.com APIs, Google Maps API.</p> <br>
-
-	    <a href="http://jfingert.github.io/weatherApp/">Weather App</a>
-	    <p>Backbone.JS, Forecast.io API</p> <br>
-
-	    <a href="https://github.com/JFingert/various_exercises/blob/master/romnum.js">Convert Your Roman Numerals</a>
-			<p>Javascript</p>
-
-	  </div>
-
-	  <div class="summary">
-	  	<h2 class="summaryHeading">My Background</h2>
-	  	
-	  	<h3>I have been attending Portland Code School, studying JavaScript and front end development.</h3>
-	  	<h3>During this time, I have been manipulating data and styling web content, using a variety of frameworks and libraries.</h3>
-	  	<h3>Check out the links to view projects and my qualifications.</h3>
-	  	<h3>Feel free to contact me with any questions.</h3>
-    </div>
-
-
-		<!-- <img src="http://consumer-perspective.com/wp-content/uploads/2013/07/White-LARGE-background.jpg"> -->
-		<!-- <img src="http://consumer-perspective.com/wp-content/uploads/2013/07/White-LARGE-background.jpg"> -->
-
-		<script type="text/javascript">
-    //     function slideBox () {
-    //         var box = document.getElementById('box');
-            
-    //         box.style.top = (290 + window.pageYOffset) + 'px';
-
-    //     console.log("Y Offset: " + window.pageYOffset);
-    // }
-    //     window.addEventListener("scroll", slideBox, false);    
-    </script>
-	</body>
+	</script>
+</body>
 </html>
